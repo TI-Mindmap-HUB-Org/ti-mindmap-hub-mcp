@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ti-mindmap": {
+      "url": "https://ti-mindmap-mcp.happyfield-b3b5145b.westeurope.azurecontainerapps.io/mcp",
+      "headers": {
+        "X-API-Key": "tim_your_api_key_here"
+      }
+    }
+  }
+}

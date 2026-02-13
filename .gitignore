@@ -1,0 +1,14 @@
+# API Keys - NEVER commit these
+*.key
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
