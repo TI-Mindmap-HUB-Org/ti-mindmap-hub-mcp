@@ -48,15 +48,15 @@ This **MCP Server** brings all of this directly into your AI assistant.
 
 ## Compatible Clients
 
-| Client | Transport | Status |
-|:---|:---|:---|
-| **VS Code** (GitHub Copilot) | HTTP | Supported |
-| **Claude Desktop** | SSE | Supported |
-| **Claude Code** (CLI) | HTTP | Supported |
-| **Cursor** | HTTP | Supported |
-| **Windsurf** | HTTP | Supported |
-| **ChatGPT** (Developer Mode) | OpenAPI | Supported |
-| Any MCP-compatible client | HTTP / SSE | Supported |
+| Client | Transport | Setup Guide | Status |
+|:---|:---|:---|:---|
+| **VS Code** (GitHub Copilot) | HTTP | [Detailed Guide](mcp-integration/VSCODE_SETUP.md) | Supported |
+| **Claude Desktop** | SSE / stdio bridge | [Detailed Guide](mcp-integration/CLAUDE_DESKTOP_SETUP.md) | Supported |
+| **Claude Code** (CLI) | HTTP | See [Quick Start](#-quick-start) | Supported |
+| **Cursor** | HTTP | See [Quick Start](#-quick-start) | Supported |
+| **Windsurf** | HTTP | See [Quick Start](#-quick-start) | Supported |
+| **ChatGPT** (Developer Mode) | OpenAPI | See [Quick Start](#-quick-start) | Supported |
+| Any MCP-compatible client | HTTP / SSE | [Integration Docs](mcp-integration/) | Supported |
 
 ---
 
@@ -304,6 +304,19 @@ TI Mindmap HUB continuously monitors leading cybersecurity sources including:
 
 ---
 
+## MCP Integration Documentation
+
+For detailed technical documentation on integrating with the MCP server, see the [**mcp-integration/**](mcp-integration/) directory:
+
+| Document | Description |
+|:---|:---|
+| [Integration Overview](mcp-integration/README.md) | Protocol details, session management, authentication flow, all tool parameters, error codes |
+| [VS Code Setup](mcp-integration/VSCODE_SETUP.md) | Step-by-step guide for VS Code + GitHub Copilot with example workflows |
+| [Claude Desktop Setup](mcp-integration/CLAUDE_DESKTOP_SETUP.md) | Setup guide with stdio-to-HTTP bridge for Claude Desktop |
+| [MCP Bridge](mcp-integration/mcp-bridge.js) | Node.js bridge script for stdio-based MCP clients |
+
+---
+
 ## Architecture Overview
 
 ```
@@ -339,8 +352,9 @@ TI Mindmap HUB continuously monitors leading cybersecurity sources including:
 | Resource | URL |
 |:---|:---|
 | **Web Platform** | [ti-mindmap-hub.com](https://ti-mindmap-hub.com) |
-| **MCP Server Endpoint** | `https://ti-mindmap-mcp.happyfield-b3b5145b.westeurope.azurecontainerapps.io/mcp` |
+| **MCP Server Endpoint** | `https://mcp.ti-mindmap-hub.com/mcp` |
 | **API Documentation** | [OpenAPI Docs](https://ti-mindmap-mcp.happyfield-b3b5145b.westeurope.azurecontainerapps.io/docs) |
+| **MCP Integration Docs** | [mcp-integration/](mcp-integration/) — Protocol details, setup guides, bridge script |
 | **MCP Protocol Spec** | [modelcontextprotocol.io](https://modelcontextprotocol.io) |
 | **Source Code (Research)** | [ti-mindmap-hub-research](https://github.com/TI-Mindmap-HUB-Org/ti-mindmap-hub-research/) |
 
