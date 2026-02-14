@@ -260,5 +260,4 @@ To update to a new version:
 ## Support
 
 - **MCP Server Documentation**: [README.md](README.md)
-- **Issues**: [GitHub Issues](https://github.com/TI-Mindmap-HUB-Org/ti-mindmap-hub-mcp/issues)
-- **Email**: [info@ti-mindmap-hub.com](mailto:info@ti-mindmap-hub.com)
+- **Email**: [info@ti-mindmap-hub.com](mailto:info@ti-mindmap-hub.com) — for bug reports, feature requests, and general inquiries

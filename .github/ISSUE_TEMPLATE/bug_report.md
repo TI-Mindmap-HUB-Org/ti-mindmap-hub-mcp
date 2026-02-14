@@ -14,11 +14,9 @@ A clear and concise description of what the bug is.
 
 - [ ] VS Code (GitHub Copilot)
 - [ ] Claude Desktop
-- [ ] Claude Code (CLI)
-- [ ] Cursor
-- [ ] Windsurf
-- [ ] ChatGPT
 - [ ] Other: ___
+
+> You can also report bugs via email at info@ti-mindmap-hub.com
 
 ## MCP Tool
 
