@@ -50,13 +50,12 @@ This **MCP Server** brings all of this directly into your AI assistant.
 
 | Client | Transport | Setup Guide | Status |
 |:---|:---|:---|:---|
-| **VS Code** (GitHub Copilot) | HTTP | [Detailed Guide](mcp-integration/VSCODE_SETUP.md) | Supported |
-| **Claude Desktop** | SSE / stdio bridge | [Detailed Guide](mcp-integration/CLAUDE_DESKTOP_SETUP.md) | Supported |
-| **Claude Code** (CLI) | HTTP | See [Quick Start](#-quick-start) | Supported |
-| **Cursor** | HTTP | See [Quick Start](#-quick-start) | Supported |
-| **Windsurf** | HTTP | See [Quick Start](#-quick-start) | Supported |
-| **ChatGPT** (Developer Mode) | OpenAPI | See [Quick Start](#-quick-start) | Supported |
-| Any MCP-compatible client | HTTP / SSE | [Integration Docs](mcp-integration/) | Supported |
+| **VS Code** (GitHub Copilot) | HTTP | [Detailed Guide](mcp-integration/VSCODE_SETUP.md) | Tested |
+| **Claude Desktop** | SSE / stdio bridge | [Detailed Guide](mcp-integration/CLAUDE_DESKTOP_SETUP.md) | Tested |
+
+The MCP server uses standard HTTP and SSE transports, so it should work with any MCP-compatible client (Claude Code, Cursor, Windsurf, ChatGPT, etc.). See the [Integration Docs](mcp-integration/) for protocol details.
+
+> **Tested a different client?** We welcome contributions! If you have successfully connected using another MCP client, please [open a Pull Request](../../pulls) to add a setup guide and we'll include it in the documentation.
 
 ---
 
@@ -121,50 +120,6 @@ Edit your `claude_desktop_config.json`:
   }
 }
 ```
-
-</details>
-
-<details>
-<summary><strong>Claude Code (CLI)</strong></summary>
-
-Add the server via the CLI:
-
-```bash
-claude mcp add ti-mindmap \
-  --transport http \
-  --url https://ti-mindmap-mcp.happyfield-b3b5145b.westeurope.azurecontainerapps.io/mcp \
-  --header "X-API-Key: tim_your_api_key_here"
-```
-
-</details>
-
-<details>
-<summary><strong>Cursor</strong></summary>
-
-In Cursor Settings → MCP, add a new server:
-
-```json
-{
-  "mcpServers": {
-    "ti-mindmap": {
-      "url": "https://ti-mindmap-mcp.happyfield-b3b5145b.westeurope.azurecontainerapps.io/mcp",
-      "headers": {
-        "X-API-Key": "tim_your_api_key_here"
-      }
-    }
-  }
-}
-```
-
-</details>
-
-<details>
-<summary><strong>ChatGPT (Developer Mode)</strong></summary>
-
-1. Go to **Settings → Connectors → Developer Mode**
-2. Click **Create Connector**
-3. Set the URL: `https://ti-mindmap-mcp.happyfield-b3b5145b.westeurope.azurecontainerapps.io`
-4. Add header: `X-API-Key: tim_your_api_key_here`
 
 </details>
 
@@ -322,7 +277,7 @@ For detailed technical documentation on integrating with the MCP server, see the
 ```
 ┌──────────────────────────────────────┐
 │  Your AI Assistant                   │
-│  (VS Code / Claude / ChatGPT / ...) │
+│  (VS Code / Claude Desktop / ...)   │
 └──────────────┬───────────────────────┘
                │ MCP Protocol
                │ (HTTP or SSE)
@@ -362,7 +317,7 @@ For detailed technical documentation on integrating with the MCP server, see the
 
 ## Support
 
-- **Issues**: [Open an issue](../../issues) in this repository
+- **Email**: [info@ti-mindmap-hub.com](mailto:info@ti-mindmap-hub.com) — for bug reports, feature requests, and general inquiries
 - **Platform**: Visit [ti-mindmap-hub.com](https://ti-mindmap-hub.com) for account and platform support
 
 ---

@@ -239,5 +239,4 @@ Content-Type: application/json
 ## Support
 
 - **Documentation**: [ti-mindmap-hub.com/mcp-integration](https://ti-mindmap-hub.com/mcp-integration)
-- **Issues**: [GitHub Issues](https://github.com/TI-Mindmap-HUB-Org/ti-mindmap-hub-mcp/issues)
-- **Email**: [info@ti-mindmap-hub.com](mailto:info@ti-mindmap-hub.com)
+- **Email**: [info@ti-mindmap-hub.com](mailto:info@ti-mindmap-hub.com) — for bug reports, feature requests, and general inquiries

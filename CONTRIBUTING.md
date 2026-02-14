@@ -6,12 +6,11 @@ Thank you for your interest in contributing to TI Mindmap MCP Server.
 
 ### Reporting Issues
 
-- Use the [Bug Report](../../issues/new?template=bug_report.md) template for problems
-- Use the [Feature Request](../../issues/new?template=feature_request.md) template for suggestions
+For bug reports, feature requests, and general inquiries, please contact us via email at [info@ti-mindmap-hub.com](mailto:info@ti-mindmap-hub.com).
 
-### Documentation
+### Documentation & Client Guides
 
-Improvements to documentation, examples, and client configuration guides are always welcome. Please open a pull request with your changes.
+Improvements to documentation, examples, and client configuration guides are always welcome. If you have tested the MCP server with a client not yet documented (e.g., Cursor, Windsurf, Claude Code, ChatGPT), please open a pull request to add a setup guide.
 
 ### Security
 

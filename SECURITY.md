@@ -6,7 +6,7 @@ If you discover a security vulnerability related to the TI Mindmap MCP Server or
 
 **Do NOT open a public issue for security vulnerabilities.**
 
-Instead, please send an email to the maintainers through the contact information available on [ti-mindmap-hub.com](https://ti-mindmap-hub.com).
+Instead, please send an email to [info@ti-mindmap-hub.com](mailto:info@ti-mindmap-hub.com).
 
 ### What to Include
 

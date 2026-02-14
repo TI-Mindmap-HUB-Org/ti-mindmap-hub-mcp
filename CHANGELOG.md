@@ -15,11 +15,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Updated main README with links to the new integration docs and setup guides
 - Added `mcp.ti-mindmap-hub.com` custom domain endpoint reference
 
+### Changed
+- Restricted Compatible Clients table to tested clients only (VS Code, Claude Desktop)
+- Removed untested client configurations (Claude Code, Cursor, Windsurf, ChatGPT) from docs and examples
+- Replaced GitHub Issues references with email contact (info@ti-mindmap-hub.com) across all files
+- Added community contribution note inviting PRs for other MCP client guides
+
 ## [2.0.0] - 2025-06-01
 
 ### Added
 - **19 MCP tools** across 6 categories: Reports, CVE Intelligence, IOC Search, STIX Bundles, Weekly Briefings, and Platform
-- **Multi-client support**: VS Code, Claude Desktop, Claude Code, Cursor, Windsurf, ChatGPT
+- **Tested client support**: VS Code (GitHub Copilot), Claude Desktop
 - **HTTP and SSE transport** for broad client compatibility
 - **API Key authentication** with secure key management
 - **CVE Intelligence tools**: search by ID, keyword, severity, and article association
